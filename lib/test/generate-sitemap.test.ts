@@ -52,7 +52,10 @@ describe('generate-sitemap', () => {
     });
 
     test('main should write sitemap file', () => {
-        vi.spyOn(generateSitemapModule, 'walkDir').mockReturnValue(['book/a.html', 'book/b.html']);
+        vi.spyOn(fs, 'readdirSync').mockReturnValue(['a.html', 'b.html']);
+        vi.spyOn(fs, 'statSync').mockImplementation(() => ({
+            isDirectory: () => false
+        }));
         vi.spyOn(generateSitemapModule, 'toUrl').mockImplementation((file: string) => {
             return 'https://example.com/' + path.basename(file);
         });
