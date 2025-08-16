@@ -81,7 +81,14 @@ unit-test:
     - export SITE_RSS_CONTENT_DIR=src
     - export SITE_RSS_OUT_FILE=book/rss.xml
     - export SITE_SITE_MAP_FILE=book/sitemap.xml
-
+    - |
+      cat << EOF | tee -a ./lib/.env
+        SITE_URL=https://study-area-cn-6fb7da.code-dev.cloud/
+        SITE_RSS_CONTENT_DIR=src
+        SITE_RSS_OUT_FILE=book/rss.xml
+        SITE_MAP_CONTENT_DIR=book
+        SITE_MAP_OUT_FILE=book/sitemap.xml
+      EOF
   script:
     - echo "test start"
     - cd lib
