@@ -114,12 +114,12 @@ describe('getMarkdownFiles recursion', () => {
             '/mockdir/sub/b.md': '# B',
             '/mockdir/sub/c.txt': 'not md',
         };
-    vi.spyOn(fs, 'readdirSync').mockImplementation((dir: any): any => {
-            if (dir === '/mockdir') return ['a.md', 'sub'] as unknown as string[];
-            if (dir === '/mockdir/sub') return ['b.md', 'c.txt'] as unknown as string[];
-            return [] as unknown as string[];
+        vi.spyOn(fs, 'readdirSync').mockImplementation((dir: string): string[] => {
+            if (dir === '/mockdir') return ['a.md', 'sub'];
+            if (dir === '/mockdir/sub') return ['b.md', 'c.txt'];
+            return [];
         });
-        vi.spyOn(fs, 'statSync').mockImplementation((filePath: any) => {
+        vi.spyOn(fs, 'statSync').mockImplementation((filePath: string) => {
             class MockStats {
                 constructor(private isDir: boolean) {}
                 isDirectory() { return this.isDir; }
