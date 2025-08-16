@@ -23,4 +23,4 @@
 
 本站对一些文章进行了适当的修改和删减，以适合当下的环境。
 
-本站原创文章若无特别说明均在 [MIT](./licenses/LICENSE-MIT.md) 与 [Apache2](./licenses/LICENSE-APACHE.md) 的双重许可下发布，转载请遵守相关规定。
+本站原创文章若无特别说明均在 [MIT](./licenses/LICENSE-MIT.md) 的许可下发布（2025-8/16 22:15由Quanrun Lee授权更改） ，转载请遵守相关规定。
