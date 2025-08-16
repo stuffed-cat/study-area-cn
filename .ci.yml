@@ -15,6 +15,8 @@ build-job:
   before_script:
     - rm -rf /etc/apt/sources.list
     - mkdir -vp ${CARGO_HOME:-$HOME/.cargo}
+    - export http_proxy=$PROXY_URL
+    - export https_proxy=$PROXY_URL
     - |
       cat << EOF | tee -a /etc/apt/sources.list
         deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
