@@ -92,7 +92,7 @@ unit-test:
     - echo "test ok"
   artifacts:
     reports:
-      junit: lib/test-report.xml
+      junit: lib/coverage/clover.xml
     paths:
       - "lib/coverage"
     untracked: false
