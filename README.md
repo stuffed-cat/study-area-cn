@@ -1,16 +1,20 @@
 # Study Area CN
 
-### URL : [learn.study-area.org.cn](https://learn.study-area.org.cn)
-
-![stars](https://img.shields.io/badge/dynamic/json?url=http%3A%2F%2Fgit.hmtsai.cn%2Fapi%2Fv1%2Frepos%2Fstudy-area-cn%2Fstudy-area-cn&query=%24.stars_count&style=for-the-badge&logo=gitea&label=stars&labelColor=%23F0F0F0&color=%231080FF&cacheSeconds=120&link=http%3A%2F%2Fgit.hmtsai.cn%2Fstudy-area-cn%2Fstudy-area-cn&link=http%3A%2F%2Fgit.hmtsai.cn%2Fstudy-area-cn%2Fstudy-area-cn)
-![forks](https://img.shields.io/badge/dynamic/json?url=http%3A%2F%2Fgit.hmtsai.cn%2Fapi%2Fv1%2Frepos%2Fstudy-area-cn%2Fstudy-area-cn&query=%24.forks_count&style=for-the-badge&logo=git&logoColor=%23303030&label=forks&labelColor=%23F0F0F0&color=%2350B250&cacheSeconds=120&link=http%3A%2F%2Fgit.hmtsai.cn%2Fstudy-area-cn%2Fstudy-area-cn&link=http%3A%2F%2Fgit.hmtsai.cn%2Fstudy-area-cn%2Fstudy-area-cn)
-![CI](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.study-area.org.cn%2Fbadgeapi%2Factions%3Furl%3Dhttp%3A%2F%2Fgit.hmtsai.cn%2Fstudy-area-cn%2Fstudy-area-cn%2Factions%26label%3DCI&style=for-the-badge&cacheSeconds=0&labelColor=%23F0F0F0)
+[![stars](https://img.shields.io/badge/dynamic/json?style=for-the-badge&logo=gitlab&label=stars&labelColor=%23F0F0F0&color=%231080FF&query=star_count&url=https://code-dev.online/api/v4/projects/129)](https://code-dev.online/study-area-cn/study-area-cn)
+[![forks](https://img.shields.io/badge/dynamic/json?style=for-the-badge&logo=gitlab&label=forks&labelColor=%23F0F0F0&color=%2350B250&query=forks_count&url=https://code-dev.online/api/v4/projects/129)](https://code-dev.online/study-area-cn/study-area-cn)  
+[![Latest Release](https://code-dev.online/study-area-cn/study-area-cn/-/badges/release.svg)](https://code-dev.online/study-area-cn/study-area-cn/-/releases)
+[![pipeline status](https://code-dev.online/study-area-cn/study-area-cn/badges/main/pipeline.svg)](https://code-dev.online/study-area-cn/study-area-cn/-/commits/main)
+[![coverage report](https://code-dev.online/study-area-cn/study-area-cn/badges/main/coverage.svg)](https://code-dev.online/study-area-cn/study-area-cn/-/commits/main)  
 
 ## 概述
 
 这里是 www.study-area.org 的半克隆！
 
 采用 mdbook 开发，编译前请先安装 Rust 环境。
+
+## 关于lib
+
+`lib` 文件夹包含用于生成 RSS 和网站地图的 TypeScript 脚本（如 `generate-rss.ts` 和 `generate-sitemap.ts`），以及相关的测试文件。此部分用于扩展 mdbook 的功能，自动化内容分发和索引。
 
 ## 进度
 
