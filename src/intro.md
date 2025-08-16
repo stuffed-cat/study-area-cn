@@ -21,7 +21,7 @@
 这是原 study-area 的愿景，也是我们的愿景。
 
 ## 源文件
-
+本站所有源码在托2025-8/14前托管在git.hmtsai.cn，在此之后
 本站所有源码均托管在 [git.hmtsai.cn](https://git.hmtsai.cn/study-area-cn/study-area-cn) 上，欢迎查阅和提出修改意见。
 
 本项目在 [Github](https://github.com/Study-Area-CN/study-area-cn) 和 [Gitee](https://gitee.com/study-area-cn/study-area-cn) 均有镜像。由 Gitea 定期单向同步。
