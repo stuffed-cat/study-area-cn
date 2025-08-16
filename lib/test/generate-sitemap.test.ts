@@ -57,8 +57,8 @@ describe('generate-sitemap', () => {
             return 'https://example.com/' + path.basename(file);
         });
         vi.spyOn(generateSitemapModule, 'generateSitemap').mockReturnValue('<xml></xml>');
-        const writeSpy = vi.spyOn(fs, 'writeFileSync').mockImplementation(() => { });
-        const logSpy = vi.spyOn(console, 'log').mockImplementation(() => { });
+        const writeSpy = vi.spyOn(fs, 'writeFileSync').mockImplementation(() => {});
+        const logSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
         generateSitemapModule.main();
         expect(writeSpy).toHaveBeenCalled();
         logSpy.mockRestore();
